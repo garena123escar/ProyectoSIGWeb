@@ -350,7 +350,7 @@ else
                                <a style=" position: relative;left: 200px" id="mapa_clustert" href="#mapa_clustert"><i ></i>Reportes del día</a>
 
                                <a style=" position: relative;left: 200px" id="mapa_cluster" href="#mapa_cluster"><i ></i>Todos los reportes</a>
-                               <a style=" position: relative;left: 200px" id="boton_ruteo" href="UltimasNoticiasAdm.php"><i ></i>Ultimos reportes</a>
+                              
 
 
                             <ul class="pull-left"></ul>

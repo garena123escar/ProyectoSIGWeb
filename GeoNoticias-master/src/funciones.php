@@ -68,6 +68,26 @@
 
 		    break;
 		}
+
+		case 'recupera-geojson-cluster-user':
+			{
+				$user= $parametros['user'];
+						
+				$sql3="SELECT row_to_json(fc)
+				FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
+				FROM (SELECT 'Feature' As type, ST_AsGeoJSON(lg.geom)::json As geometry, row_to_json
+				((SELECT l FROM (SELECT lg.comuna, lg.tipo, lg.descripcion, lg.id_reporte, lg.usuario  ) As l)) As properties
+				FROM (SELECT st_setsrid(st_makepoint(r.x,r.y),4326) as geom , c.comuna, b.barrios, r.tipo, r.descripcion, r.id_reporte, r.fecha_registro, r.usuario, r.id_usuario FROM
+		   	comuna as c, reporte as r, barrios as b, usuarios as u
+		   	WHERE st_within(st_setsrid(st_makepoint(r.x,r.y),4326), c.geom ) and u.correo ='$user'  
+		   	) As lg   
+			) As f )  As fc;";
+			   
+						$query3 = pg_query($dbcon,$sql3);
+						$row = pg_fetch_row($query3);
+						echo $row[0];
+						break;
+				}
 	//Caso para validar el login y el password
 		case 'validar-login':
 		{

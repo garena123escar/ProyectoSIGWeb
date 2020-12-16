@@ -418,7 +418,6 @@ else
 		    </button><br>
 		    <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
 				<input  type="button" class="dropdown-item" id="mapa_calor" value="Mapa de calor "class="btn border-warning" >
-				<input  type="button" class="dropdown-item" id="mapa_cluster" value="Cluster de datos"class="btn border-warning btn-lg" >
 		    </div>
 		  </div> <br><br>
 
