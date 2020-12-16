@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Barra de navegación en CSS</title>
+<!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/navabar.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+ <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+<style type="text/css">.borde1{
+    border: #F5D0A9 2px solid;
+    width: 20px;
+    height: 80x;
+
+  }
+</style>
+</head>
+
+
+<body>
+
+
+
+<!-- inicio de la barra de navegación-->
+
+<div class="modal fade modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">¿Quienes somos?</h1>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>Visión</h3> <p>
+          <h5 class="display-6 text-justify"> En los próximos años, posicionarse como un medio de comunicación alimentado además, creado por y para los usuarios Caleños. <br> <br><br>
+  Ser el primer medio de reporte continúo entre autoridades y comunidad. Teniendo en cuenta, qué, no solo se podrán reportar hechos delictivos, sino, manifestaciones, atascos, eventos de gran magnitud, entre otros.
+  </h5> </p>
+          <h3>Misión</h3> <p>
+          <h5 class="display-6 text-justify"> <br>Debido a la creciente necesidad de espacializar la información de último minuto se hace necesario  la creación de herramientas de tipo espacial que permitar realizar dicha acción, teniendo en cuenta  qué según información oficial, la ciudad de Santiago de Cali, es una de las ciudades más peligrosas del país.
+          <br>  <br>   Sin embargo, la función de este sistema, no es netamente el reporte de la inseguridad, o casos de violencia. Es un sistema innovador que pretende dar conocimiento a la ciudadania sobre las acciones de caracter noticioso que ocurren día a día en la ciudad. Dando así alcance a la ciudadania sobre las acciones que ocurren en su entorno espacial.</h3>
+  </h5> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="topnav" id="myTopnav">
+
+          <div class="container-fluid">
+                    <div class="row">
+                          <div class=" col-xs-12  col-sm-12 col-md-12 col-lg-12 text-center">
+
+                                                       
+                                        <a class="logo" href=""> <img src="img/logo(1).png"/></a>
+                                        <ul class="pull-left"></ul>  <ul class="pull-left"></ul> 
+                                        <a href="#ventana-vision" data-toggle="modal" data-target="#exampleModal" aria-haspopup="false" aria-expanded="false">¿Quienes sómos?</a>
+                                        <ul class="pull-left"></ul> 
+                                        <a style="text-align: center; " href="#Nosotros"><i class="fa fa-fw fa-cart-plus"></i>Servicios para tu empresa</a>
+                                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+                              <ul class="pull-left"></ul>
+                             
+
+
+                              <a style=" text-align: center;" href="InicioSesion.html"><i class="fa fa-fw fa-user "></i>Iniciar Sesión Usuarios</a>
+                               <ul class="pull-left"></ul>
+                               <a style=" text-align: center;" href="InicioSesion3.html"><i class="fa fa-fw fa-user "></i>Iniciar Sesión Empresas</a>
+                               <ul class="pull-left"></ul>
+                              <a style="text-align: center; " href="Registro.html"><i class="fa   fa-fw fa-user"></i>Regístrate</a>
+
+
+
+
+                          </div>
+
+
+                  </div>
+
+          </div>
+</div>
+
+
+<section  id="Nosotros">
+            <div class="container-fluid">
+                    <div class="row">
+                                <div class="  col-sm-1 col-md-1 col-lg-1 text-center"></div>
+                                  <div class=" col-xs-12 col-sm-11 col-md-11 col-lg-10 text-center">
+
+                                        <div id="carousel1" class="carousel slide" data-ride="carousel">
+                                                  <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                              <img src="img/1.png" alt="" max-width= "720px" max-height="380px" width="100%" height="100%"  class="img-responsive">
+                                                        </div>
+
+                                                        <div class="carousel-item">
+                                                             <img src="img/2.png" alt="" max-width= "720px" max-height="380px" width="100%" height="100%"  class="img-responsive">
+                                                        </div>
+
+                                                        <div class="carousel-item">
+                                                             <img src="img/3.png" alt="" max-width= "720px" max-height="380px" width="100%" height="100%"  class="img-responsive">
+                                                        </div>
+
+                                                    </div>
+
+                                            <!--Controles carousel-->
+                                                        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="sr-only">Anterior</span>
+                                                        </a>
+                                                        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="sr-only">Siguiente</span>
+                                                        </a>
+
+                                            <!--Controles de indicadores-->
+                                                        <ol class="carousel-indicators">
+                                                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                                            <li data-target="#carousel1" data-slide-to="1"></li>
+                                                            <li data-target="#carousel1" data-slide-to="2"></li>
+                                                            <li data-target="#carousel1" data-slide-to="3"></li>
+                                                        </ol>
+
+                                         </div>
+                                  </div>
+                        <div class="  col-sm-1 col-md-1 col-lg-1 text-center"></div>
+
+
+                   </div>
+            </div>
+
+
+<section>
+
+      <div class="container-fluid">
+      <div class="row">
+
+                  <div class=" col-xs-12 col-sm-1 col-md-1 col-lg-1 text-center"></div>
+
+                  <div class=" col-xs-12 col-sm-12 col-md-5 col-lg-6 text-center" style="z-index: 2;">
+
+                        <div id="mapid" style=" width: 100%; height: 350px;"></div>
+                   </div> <br> <br><br>
+
+                  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-5 text-center">
+
+
+                      <h5> ¡Contándote el minuto a minuto de tu ciudad!</h5>
+
+                      <br><br><br>
+
+                      <p>Contactanos: +57 3194697222 <br><br> daniel.escobar.cardona@correounivalle.edu.co <br>esteban.ochoa@correounivalle.edu.co <br> jorge.castaño@correounivalle.edu.co </p>
+                    </div>
+      </div>
+
+      </div>
+        <div class="social-bar" style="z-index: 1;">
+          <a href="https://www.facebook.com/" class="icon icon-facebook" target="_blank"></a>
+          <a href="https://twitter.com/" class="icon icon-twitter" target="_blank"></a>
+          <a href="https://www.youtube.com/" class="icon icon-youtube" target="_blank"></a>
+          <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"></a>
+  </div>
+
+</section>
+</div>
+<!-- fin sección del mapa y contactos easy-->
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+      <h6> Universidad del Valle <br> Diseño de aplicaciones SIG </h6>
+    </div>
+
+    <div class="display-6  col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4  text-center"> <h6> Diseñado por: <br>
+      Esteban Ochoa <br> Daniel Escobar <br> Jorge Castaño</h6>
+      <p>Todos los derechos reservados</p>
+
+    </div>
+    <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+      <h6> CityReporte <br> Una aplicación para la intercacción entre ciudadanos y empresas </h6>
+    </div>
+
+</div>
+</div>
+<!--  función javascript mapa de ubicacion-->
+
+<script>
+
+
+
+  var basemaps =
+  {
+
+
+    Streets: L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    })
+  };
+
+
+
+  var mymap = L.map('mapid',
+  {
+    zoom: 10
+  }).setView([3.452554 , -76.533755], 18);
+
+
+  basemaps.Streets.addTo(mymap);
+
+
+  var capamarcador = L.marker([3.452554 , -76.533755 ]).addTo(mymap).bindPopup("¡Visítanos, aquí se encuentra  tu pasaje al éxito!").openPopup();
+
+
+</script>
+
+
+
+<!--  función javascript boton toggler-->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+</body>
+</html>
